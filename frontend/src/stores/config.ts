@@ -48,6 +48,7 @@ export interface ConfigState {
 	allowIconChanges: boolean,
 	enabledProFeatures: string[],
 	concurrentWrites: boolean,
+	customCss: string,
 }
 
 export const useConfigStore = defineStore('config', () => {
@@ -90,6 +91,7 @@ export const useConfigStore = defineStore('config', () => {
 		allowIconChanges: true,
 		enabledProFeatures: [],
 		concurrentWrites: false,
+		customCss: '',
 	})
 
 	const migratorsEnabled = computed(() => state.availableMigrators?.length > 0)

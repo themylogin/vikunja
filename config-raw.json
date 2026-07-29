@@ -139,6 +139,11 @@
                     "comment": "Allow using a custom logo for dark mode via external URL. If not set, the regular logo will be used for both light and dark modes."
                 },
                 {
+                    "key": "customcss",
+                    "default_value": "",
+                    "comment": "Custom CSS, applied to every page of the web ui for all users. Available from the /info endpoint.\nUse a yaml block scalar for multiple lines:\ncustomcss: |\n  :root {\n    --primary: #1973ff;\n  }"
+                },
+                {
                     "key": "enablepublicteams",
                     "default_value": "false",
                     "comment": "Enables the public team feature. If enabled, it is possible to configure teams to be public, which makes them\ndiscoverable when sharing a project, therefore not only showing teams the user is member of."
